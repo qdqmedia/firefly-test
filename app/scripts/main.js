@@ -1,14 +1,17 @@
 require.config({
-  shim: {
-  },
-
   paths: {
-    jquery: 'vendor/jquery.min'
-    firefly: '
+    jquery: 'vendor/jquery/jquery',
+    lodash:'vendor/lodash/lodash',
+    firefly: 'firefly'
   }
 });
  
-require(['app'], function(app) {
+require(['app', 'jquery', 'lodash', 'firefly'], function(app, $, _) {
   // use app here
   console.log(app);
+  $(function(){
+    $(document).on('click', '#startCobrowse', function(){
+      showFirefly($('#token').val());
+    });
+  });
 });
