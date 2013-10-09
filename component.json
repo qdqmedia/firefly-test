@@ -1,0 +1,10 @@
+{
+  "info": "This is the config file for the bower package manager https://github.com/twitter/bower",
+  "name": "test",
+  "version": "0.1.10",
+  "dependencies": {
+    "jquery": "~1.9.1",
+    "lodash": "~1.0.0-rc.3",
+    "jquery-migrate": "~1.1.1",
+  }
+}
