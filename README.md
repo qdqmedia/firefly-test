@@ -1,5 +1,4 @@
 #Overwiew
-	Test version for getfirefly.com
-	Please add the firefly token into app/index.html
+	Test version for usefirefly.com
 ---
 
