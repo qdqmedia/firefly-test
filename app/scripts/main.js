@@ -1,17 +1,15 @@
 require.config({
-  paths: {
-    jquery: 'vendor/jquery/jquery',
-    lodash:'vendor/lodash/lodash',
-    firefly: 'firefly'
-  }
+    paths: {
+        jquery: 'vendor/jquery/jquery',
+        bootstrap: 'vendor/bootstrap/dist/js/bootstrap.js',
+        lodash:'vendor/lodash/lodash',
+        delay: 'delay',
+        historyStack: 'historyStack',
+        navigation: 'navigation',
+        overrideLinks: 'overrideLinks',
+        firefly: 'firefly',
+        app: 'app'
+    }
 });
- 
-require(['app', 'jquery', 'lodash', 'firefly'], function(app, $, _) {
-  // use app here
-  console.log(app);
-  $(function(){
-    $(document).on('click', '#startCobrowse', function(){
-      showFirefly($('#token').val());
-    });
-  });
-});
+
+require(['app']);
